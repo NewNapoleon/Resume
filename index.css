@@ -1,0 +1,239 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,"PingFang SC","Hiragino Sans GB","Heiti SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+    color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*第一页：概要*/
+#page1{
+    background: url("img/bg.png") #18bc9c;
+}
+
+.cover{
+    position:relative;
+}
+
+.cover:after{
+    position:absolute;
+    content: "";
+    width: 500px;
+    height: 2px;
+    background: #ffffff;
+    left: 50%;
+    bottom:-10px;
+    margin-left: -250px;
+}
+
+.contentContainer{
+    width: 1000px;
+    margin: 0 auto;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contentContainer .logo{
+    width: 192px;
+    margin: 20px auto 10px auto;
+
+}
+
+
+.contentContainer .logo img{
+    width: 192px;
+    height: 192px;
+    border-radius: 50%;
+}
+
+.contentContainer p{
+    font-size: 18px;
+}
+
+p.moto{
+    font-size: 22px;
+}
+
+.name{
+    margin-top: 20px;
+}
+
+.contact a:hover{
+    color: #f1fd71;
+}
+
+/*第一页结束*/
+
+/*第二页：关于自己*/
+#page2{
+    background: url("img/bg.png") #109085;
+    text-align: center;
+}
+
+.banner{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.points{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+.point .icon{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    background: rgba(255,255,255,.1);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    transition: transform ease-out .1s,background .2s,-webkit-transform ease-out .1s;
+}
+.point .icon:hover{
+    transform: scale(0.9);
+    background: rgba(255,255,255,.05);
+}
+
+.point .icon img{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+}
+
+.detail p{
+    font-size: 18px;
+}
+/*第二页结束*/
+
+/*第三页：项目经历*/
+#page3{
+    background: url("img/bg.png") #945c4c;
+}
+
+.content{
+    max-width: 1000px;
+    margin:0 auto;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.projectName{
+    padding:20px 0 20px 0;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.projectIcon{
+    width: 325px;
+    float: left;
+    margin-left: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.projectIcon img{
+    width: 325px;
+    border-radius: 5px;
+}
+
+.pointIcon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background:  url("img/favorite.svg") no-repeat;
+    background-size: 10px 10px;
+}
+
+
+.projectDetail{
+    float: left;
+    max-width: 600px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+
+.projectText p{
+    line-height: 24px;
+}
+
+.projectDetail span{
+    padding: 0 0 5px 0;
+    border-bottom: 2px solid #ffffff;
+    font-weight: 900;
+}
+
+.projectPoints{
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.projectPoints li{
+    line-height: 24px;
+}
+/*第三页结束*/
+
+/*第四页：寄语与联系方式*/
+#page4{
+    background: url("img/bg.png") #87b0a5;
+}
+.contactContent{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 20px;
+}
+
+.contactContent .contacts{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: left;
+}
+
+.contactIcon{
+    position:relative;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    margin-right: 15px;
+    transition: transform ease-out .1s,background .2s,-webkit-transform ease-out .1s;
+}
+
+.contactIcon:hover{
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.2);
+}
+
+
+.contactIcon img{
+    position:absolute;
+    width: 65%;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);;
+}
+
+
+/*第四页结束*/
